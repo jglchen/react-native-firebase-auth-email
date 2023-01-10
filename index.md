@@ -23,3 +23,5 @@ This example creates an authentication system that uses **an encrypted storage t
 ### [React GitHub](https://github.com/jglchen/firebase-auth-email)
 ### Docker: docker run -p 3000:3000 jglchen/firebase-auth-email
 ### back To [Series Home](https://jglchen.github.io/)
+
+{% include giscus.html %}
