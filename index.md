@@ -15,6 +15,7 @@ This example creates an authentication system that uses **an encrypted storage t
 
 **iOS** and **Android** mobile apps are developed with **React Native**, anyone who is interested can test the apps through the [Expo Publish Link](https://exp.host/@jglchen/firebase-auth-email) with [Expo Go](https://expo.dev/client) app.
 
+![react-native-firebase-auth-email-screenshot](/images/react-native-firebase-auth-email-screenshot.png)
 
 ### [React Native Expo Publish](https://expo.dev/@jglchen/firebase-auth-email)
 ### [React Native GitHub](https://github.com/jglchen/react-native-firebase-auth-email)
