@@ -16,7 +16,7 @@ import Unorderedlist from 'react-native-unordered-list';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Linking from 'expo-linking';
-import Constants from 'expo-constants';
+//import Constants from 'expo-constants';
 import { User } from './lib/types';
 import { getUserData } from './lib/utils';
 
@@ -27,7 +27,8 @@ export default function App() {
     const [authUser, setAuthUser] = useState<User | null>(null);
     const [emaillinkerr, setEmailLinkerr] = useState('');
 
-    const expoUrl = __DEV__ ? 'exp://10.0.0.122:19000/--': 'exp://exp.host/@jglchen/' + Constants.manifest!.name;
+    //const expoUrl = __DEV__ ? 'exp://10.0.0.122:19000/--': 'exp://exp.host/@jglchen/' + Constants.manifest!.name;
+    const expoUrl = 'fbauthemail://';
     const expoLink = Linking.createURL(expoUrl);
     const FIREBASE_LINK_PROXY = 'https://firebase-auth-email.vercel.app/firebase-auth-redirect';
     const proxyUrl = `${FIREBASE_LINK_PROXY}?redirectUrl=${encodeURIComponent(expoLink)}`;

@@ -1,6 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
 import { View, Text, Keyboard, TouchableHighlight, TouchableWithoutFeedback } from 'react-native';
-import { Button, TextInput, ActivityIndicator, Colors } from 'react-native-paper';
+import { Button, TextInput, ActivityIndicator } from 'react-native-paper';
 //import * as WebBrowser from 'expo-web-browser';
 import { auth } from '../lib/firebase';
 import { sendSignInLinkToEmail } from 'firebase/auth';
@@ -92,7 +92,7 @@ function UserLogIn({proxyUrl, emaillinkerr}: PropsType){
             </View>
             {inPost &&
                 <View style={styles.loading}>
-                    <ActivityIndicator size="large" animating={true} color={Colors.white} />
+                    <ActivityIndicator size="large" animating={true} color="#FFFFFF" />
                 </View>
             }
         </View>
